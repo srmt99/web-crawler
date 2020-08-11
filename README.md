@@ -5,7 +5,7 @@ web crawler , text extractor and (persian) text cleaner.
 the aim of this project is to provide a corpus for Persian (or any other) language.
 aside from the wikipedia dataset for Persian (or any other) language which might not be large enough, it is a good idea to crawl the world wide web in order to extract web page materials to build our own data set for when dealing with problems which require a large data set of raw text.
 
-except for the open source packages, the `aaronsw/html2text` is also used for more info please visit https://github.com/aaronsw/html2text
+for this project, except for the open source python packages `aaronsw/html2text` is also used. for more info please visit https://github.com/aaronsw/html2text
 
 how it works:
 -----------------------
