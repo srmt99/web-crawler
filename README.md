@@ -22,10 +22,10 @@ first of all, if you are looking for the already gathered persian text file, i h
 
 but if you wish to create your own data set, here are the steps to take:
 
-1. fill the `listOfInitialSites.txt` with the desired URLs
-2. run `subLink_extractor.py` (the results should be in a `subLink` folder)
-3. run the `url_set_creator.py` to gather all the extracted URLs in one place (`url_set.txt`)
-4. open the terminal in the current directory and run the command: `scrapy startproject text_extractor` (needless to say, you should have the scrapy package installed)
+1. open the terminal in the prefered directory and run the command: `scrapy startproject text_extractor` (needless to say, you should have the scrapy package installed)
+2. go in the `./text_exctractor` directory (every thing is done here) then fill a `listOfInitialSites.txt` file with the desired URLs
+3. run `subLink_extractor.py` (the results should be in a `subLink` folder)
+4. run the `url_set_creator.py` to gather all the extracted URLs in one place (`url_set.txt`)
 5. run the `spider_creator.py` to create the spiders
 6. depending on the `num_spiders` which is set at the begining of the `spider_creator.py` you should run as many terminals independently (default value is 7)
 7. in each terminal run the command: `scrapy crawl spider$ -s JOBDIR=crawls/spider$` and put the spider number instead of `$` (for example for the first spider to run you shoudl type: `scrapy crawl spider1 -s JOBDIR=crawls/spider1`)
