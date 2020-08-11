@@ -1,0 +1,40 @@
+import scrapy
+from bs4 import BeautifulSoup
+import re
+
+class QuotesSpider(scrapy.Spider):
+    name = "spider_name"
+    filenum = 0
+    try:
+        with open(f"crawls/{name}_seenNum",'r')as f:
+            filenum = int(f.readline())
+    except:
+        pass
+    def start_requests(self):
+        urls = set()
+        with open("./url_set_part_.txt",'r',encoding="UTF-8")as f:
+            lines = f.readlines()
+        
+        for line in lines:
+            urls.add(line)
+
+        for url in urls:
+            yield scrapy.Request(url=url, callback=self.parse)
+
+    def parse(self, response):
+        filename = f"./downloaded_content/{self.name}/file{self.filenum}.html"
+        html_page = response.text
+        soup = BeautifulSoup(html_page, 'html.parser')
+        text = soup.find_all(text=True)
+        output = ''
+        for t in text:
+                output += '{} '.format(t)
+        output = re.sub(r'\n\s*\n', '\n', output)
+        output = re.sub(r'[ \t\r\f\v]+', ' ', output)
+        with open(filename, 'w',encoding="UTF-8") as f:
+            f.write(output)
+        self.filenum  += 1
+#        self.log('Saved file %s' % filename)
+
+        with open(f"crawls/{self.name}_seenNum",'w')as f:
+            f.write(str(self.filenum))
