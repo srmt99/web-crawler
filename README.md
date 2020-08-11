@@ -1,13 +1,13 @@
 web-crawler
 ===========
-web crawler and (persian) text extractor
+web crawler , text extractor and (persian) text cleaner.
 
 the aim of this project is to provide a corpus for Persian (or any other) language.
 aside from the wikipedia dataset for Persian (or any other) language which might not be large enough, it is a good idea to crawl the world wide web in order to extract web page materials to build our own data set for when dealing with problems which require a large data set of raw text.
 
 how it works:
 -----------------------
-in order to create such dataset we go through the folloing steps:
+in order to create such dataset we go through the following steps:
 1. `we create a list of initial web page URLs which we will strat from`
 2. `we will extract sublinks form the said initial list (in this project the BFS method has been used)`
 3. `we go through all the extracted URLs and download the contained text in each.`
