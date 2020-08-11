@@ -21,5 +21,7 @@ how to use this project:
 3. `run the <url_set_creator.py> to gather all the extracted URLs in one place (url_set.txt)`
 4. `open the terminal in the current directory and run <scrapy startproject text_extractor> (needless to say, you should have the scrapy package installed)`
 5. `run the <spider_creator.py> to create the spiders`
-6. `depending on the <num_spiders> which is set at the begining of the <spider_creator.py> you should run as many terminals independently (difault value is 7)`
-7. `in each terminal run the command: <>`
+6. `depending on the <num_spiders> which is set at the begining of the <spider_creator.py> you should run as many terminals independently (default value is 7)`
+7. `in each terminal run the command: <scrapy crawl spider$ -s JOBDIR=crawls/spider$> and put the spider number instead of $ meaning for example for the first spider to run you shoudl type: <>scrapy crawl spider1 -s JOBDIR=crawls/spider1`
+8. `the downloaded content should be in a <donloaded_content> folder`
+9. `run the <text_cleaner.py> to have the final output. (placed in a <raw_text> folder)`
