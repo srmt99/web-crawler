@@ -1,11 +1,10 @@
-# web-crawler
-web crawler and (persian) text extractor\n
-the aim of this project is to provide a corpus for Persian (or any other) language.\n
-aside from wikipedia dataset for Persian (or any other) language , it is a good idea\n
-to crawl the world wide web in order to extract web page materials , which could later\n
-come in handy, when dealing with problems which require a large data set of raw text.\n
-
-# how to use this project:
+web-crawler
+===========
+web crawler and (persian) text extractor\nthe aim of this project is to provide a corpus for Persian (or any other) language.
+aside from wikipedia dataset for Persian (or any other) language , it is a good ideato crawl the world wide web in order to extract web page materials , which could latercome in handy, when dealing with problems which require a large data set of raw text.
+how to use this project:
+-----------------------
+1. `pip install tika`
 in order to create such dataset we go through the folloing steps:
 1_ we create a list of initial web page URLs which we will strat from
 2_ we will extract sublinks form the said initial list (in this project
