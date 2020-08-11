@@ -8,11 +8,11 @@ aside from the wikipedia dataset for Persian (or any other) language which might
 how it works:
 -----------------------
 in order to create such dataset we go through the following steps:
-1. `we create a list of initial web page URLs which we will strat from`
-2. `we will extract sublinks form the said initial list (in this project the BFS method has been used)`
-3. `we go through all the extracted URLs and download the contained text in each.`
-4. `we go through the downloaded text, and remove unwanted text such as: html tags, front-end/back-end codes, redundant words, characters and...`
-5. `finally, we save the clean and raw output text for further use.`
+1. we create a list of initial web page URLs which we will strat from
+2. we will extract sublinks form the said initial list (in this project the BFS method has been used)
+3. we go through all the extracted URLs and download the contained text in each.
+4. we go through the downloaded text, and remove unwanted text such as: html tags, front-end/back-end codes, redundant words, characters and...
+5. finally, we save the clean and raw output text for further use.
 
 how to use this project:
 -----------------------
