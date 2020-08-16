@@ -16,7 +16,8 @@ class QuotesSpider(scrapy.Spider):
             lines = f.readlines()
         
         for line in lines:
-            urls.add(line)
+            if ("http" in line):
+                urls.add(line)
 
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
