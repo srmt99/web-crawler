@@ -34,7 +34,7 @@ def extract_text(list_of_files,t_id):
     this function takes a list of files (containing text) and cleans it
     and writes the clean text in a text file assosiataed with it's Thread id (t_id)
     '''
-    for file_name in list_of_files[:10000]:
+    for file_name in list_of_files:
         with open(file_name,encoding="UTF-8") as f:
             lines = f.readlines()
 
