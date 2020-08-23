@@ -34,7 +34,7 @@ but if you wish to create your own data set, here are the steps to take:
 
 NOTE: since this part could take several hours to several days (depending on the volume of your url_set) this process can be halted at any moment, and the progress is saved as it runs. thus if the program stops for any reason (ctrl+c, unwanted exception, power-cut etc.) the progress is not lost, and by running the exact same command -`scrapy crawl spider$ -s JOBDIR=crawls/spider$`- the program will run from the point it was interrupted.
 
-8. the downloaded content should be in a `donloaded_content` folder
+8. the downloaded content should be in a `downloaded_content` folder
 9. run the `text_cleaner.py` to have the final output. (placed in a `raw_text `folder)
 
 have in mind that the text_cleaner.py which i wrote only works correctly on Persian language, and if you wish to use the project for any other, you should implement the 9th step on your own. (or change the code i've written which is not as hard as you might think!)
