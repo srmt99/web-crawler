@@ -7,6 +7,11 @@ aside from the wikipedia dataset for Persian (or any other) language which might
 
 for this project, except for the open source python packages `aaronsw/html2text` is also used. for more info please visit https://github.com/aaronsw/html2text
 
+update:
+-------
+for those of you who are looking for Only presian raw text, there already is a repo containing roughly 70 GigaBytes of Persian raw text. here is the link:
+visit https://github.com/persiannlp/persian-raw-text
+
 how it works:
 -----------------------
 in order to create such dataset we go through the following steps:
@@ -16,7 +21,7 @@ in order to create such dataset we go through the following steps:
 4. we go through the downloaded text, and remove unwanted text such as: html tags, front-end/back-end codes, redundant words, characters and...
 5. finally, we save the clean and raw output text for further use.
 
-how to use this project:
+how to use it:
 -----------------------
 first of all, if you are looking for the already gathered persian text file, i have put the download link below:
 
