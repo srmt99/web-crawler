@@ -51,4 +51,4 @@ there is also an (optinal) section to download some of the data from the 70 GB r
 
 happy scraping and training !!!
 
-please fill free to dm me if you come across any problems or questions.
+please feel free to dm me if you come across any problems or questions.
