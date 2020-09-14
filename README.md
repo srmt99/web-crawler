@@ -43,11 +43,15 @@ NOTE: since this part could take several hours to several days (depending on the
 
 have in mind that the text_cleaner.py which i wrote only works correctly on Persian language, and if you wish to use the project for any other, you should implement the 9th step on your own. (or change the code i've written which is not as hard as you might think!)
 
-(optional) training on fasstText:
+(optional) training on fastText:
 ---------------------------------
 since i wrote this whole project to have some data to train a word embedding using fasttext, the needed code to train the model is also added by the name `fasttext.ipynb`
 you might notice that is requires that you have the data in the `input.txt` file. 
-there is also an (optinal) section to download some of the data from the 70 GB repo and use that + the raw data on wikipidia + any additional data you might add, to train the model. all that matters is that you have all the data in a `input.txt` file before you try to train the model.
+there is also an (optinal) section to download some of the data from the 70 GB repo and use that + the raw data on wikipidia + any additional data you might add, to train the model.
+
+all that matters is that you have all the data in a `input.txt` file before you try to train the model.
+
+------------------------------
 
 happy scraping and training !!!
 
