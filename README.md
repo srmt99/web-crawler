@@ -9,8 +9,7 @@ for this project, except for the open source python packages `aaronsw/html2text`
 
 update:
 -------
-for those of you who are looking for Only presian raw text, there already is a repo containing roughly 70 GigaBytes of Persian raw text. here is the link:
-visit https://github.com/persiannlp/persian-raw-text
+for those of you who are looking for Only presian raw text, there already is a repo containing roughly 70 GigaBytes of Persian raw text. here is the link: https://github.com/persiannlp/persian-raw-text
 
 how it works:
 -----------------------
