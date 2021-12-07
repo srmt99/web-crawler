@@ -22,12 +22,6 @@ in order to create such dataset we go through the following steps:
 
 how to use it:
 -----------------------
-first of all, if you are looking for the already gathered persian text file, i have put the download link below:
-
-`NO-LINK-YET`
-
-but if you wish to create your own data set, here are the steps to take:
-
 1. open the terminal in the prefered directory and run the command: `scrapy startproject text_extractor` (needless to say, you should have the scrapy package installed)
 2. go in the `./text_exctractor` directory (every thing is done here) then fill a `listOfInitialSites.txt` file with the desired URLs
 3. run `subLink_extractor.py` (the results should be in a `subLink` folder)
